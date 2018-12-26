@@ -16,7 +16,8 @@ async def on_messsage(message):
     if message.content.startswith("?hi"):
         msg = 'Hello (0.author.mention) How are you?'.format(message)
         await client.send_message(message.channel)
-client.run(os.genteny('rafsanrahman'))
+client.run(NTI3MTIzMDgyMzgxMzYxMTUy.DwVKXA.UZNWKc_OBPEP0cTkOh5i4Y0Usdc
+)
 
 	
 	

@@ -1,14 +1,22 @@
 import discord
 from discord.ext.commands import bot
 from discord.ext import commands
-import time
+import async
 import os
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "?")
 @client.event
-async def on_ready():p
-    print("Thankyou For Using Video Bot")
-    await client.change_presence(game=discord.Game(name="prefix ?"))
+async def on_ready():
+    print("Thankyou For Using Disocrd Bot")
+    await client.change_presence(game=discord.Game(name="Discord Bot"))
+
+@client.event
+async def on_messsage(message):
+    if message.content.startswith("?hi"):
+        msg = 'Hello (0.author.mention) How are you?'.format(message)
+        await client.send_message(message.channel)
+client.run(os.genteny('9RD_7hMwFz2LxyJ2QK6VrCVpbmB7ipH'))
+
 	
 	
